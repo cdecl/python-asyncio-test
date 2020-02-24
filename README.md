@@ -16,13 +16,13 @@ $ pip install -r requirements.txt
 ```
 
 ## Running the tests
-- sync-http.py : sync http call 
+- [sync-http.py](sync-http.py) : sync http call 
 	- http client : requests
 	- r = http()
-- async-http.py : asyncio, sync http call 
+- [async-http.py](async-http.py) : asyncio, sync http call 
 	- http client : requests
 	- r = loop.run_in_executor(None, http, u)
-- async-aiohttp.py : asyncio, async http call 
+- [async-aiohttp.py](async-aiohttp.py) : asyncio, async http call 
 	- http client : aiohttp
 	- r = asyncio.ensure_future(http(u))
 
